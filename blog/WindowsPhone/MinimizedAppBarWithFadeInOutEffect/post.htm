@@ -1,0 +1,124 @@
+<h2>The problem:</h2>
+
+I want my AppBar to be semitransparent when minimized but opaque when expanded.  That's fine, there's built-in support for that (see <strong><a href="http://blog.jayway.com/2011/08/12/show-a-minimzed-panorama-application-bar/">Jayway Team blog</a></strong>), but I want to <strong>smoothly animate transparency on my AppBar</strong> instead of just toggling between two values abruptly.
+
+<h1>FadeIn/FadeOut instead of toggling between two opacity values</h1>
+
+This seems a bit tricky at first.  AppBar has an Opacity property, but <a href="http://msdn.microsoft.com/en-us/library/microsoft.phone.shell.applicationbar(v=vs.92).aspx">AppBar inherits from <strong>object</strong></a> and Opacity is not exposed as a DependencyProperty.  So, there's no built-in support for binding/animating this property or any other property on AppBar.  I thought of a few ways to go here but once I had played around with the code a bit until the path became clear - add a new AppBarOpacity DP to page and animate on it, while plumbing the new values to Page.AppBar.Opacity.
+
+<br />
+<span style="font-size:24; text-decoration: underline;">Adding the AppBar</span>
+
+In VisualStudio, I'm starting from a new Windows Phone Application.  First, I want to define a constant for the Opacity my AppBar will have when minimized and faded out.  I will add this as a StaticResource to MainPage.xaml. First, let's include the System namespace from mscorlib:
+
+[sourcecode language="xml" highlight="2"]
+<phone:PhoneApplicationPage
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+[/sourcecode]
+
+Then, define the constant:
+
+[sourcecode language="xml" highlight="2"]
+<phone:PhoneApplicationPage.Resources>
+    <sys:Double x:Key="AppBarSemitransparentOpacity">0.45</sys:Double>
+</phone:PhoneApplicationPage.Resources>
+[/sourcecode]
+
+Next, uncomment the AppBar portion of MainPage.xaml and change a few properties:
+
+[sourcecode language="xml" highlight="2,6,7,8"]
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar x:Name="MyAppBar"
+                              BackgroundColor="Orange"
+                              IsVisible="True"
+                              IsMenuEnabled="True"
+                              Mode="Minimized"
+                              StateChanged="ApplicationBar_StateChanged"
+                              Opacity="{StaticResource AppBarSemitransparentOpacity}">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+[/sourcecode]
+
+When setting the StateChanged callback, type ApplicationBar_StateChanged and press tab to have VS generate some code behind for you.  We'll revisit this later.
+
+Then, add the same constant to MainPage.xaml.cs. Yeah, it's too bad that you can't bind to static properties in SL like you can in WPF and there's probably a better way to achieve this rather than duplicating the constant definition, but we'll go with this for purposes of our scenario:
+
+[sourcecode language="csharp" highlight="3"]
+public partial class MainPage : PhoneApplicationPage
+{
+    static double AppBarSemitransparentOpacity = 0.45;
+[/sourcecode]
+
+<br />
+<span style="font-size:24; text-decoration: underline;">Defining a new DependencyProperty</span>
+
+In MainPage.xaml.cs, inside the MainPage class, start typing <strong>propdp</strong> to get the DependencyProperty code snippet...
+<div><a href="http://finnigantime.files.wordpress.com/2012/02/propdp.png"><img class="alignnone size-full wp-image-19" title="propdp" src="http://finnigantime.files.wordpress.com/2012/02/propdp.png" alt="" width="640" height="103" /></a></div>
+Press <strong>tab</strong> twice to expand it.  Name it <strong>AppBarOpacity</strong>, make it of type double, register MainPage as the owner class, rename the metadata class type from UIPropertyMetadata to PropertyMetadata, and give it some default metadata like so:
+
+[sourcecode language="csharp"]
+    public double AppBarOpacity
+    {
+        get { return (double)GetValue(AppBarOpacityProperty); }
+        set { SetValue(AppBarOpacityProperty, value); }
+    }
+
+    // Using a DependencyProperty as the backing store for AppBarOpacity.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty AppBarOpacityProperty =
+        DependencyProperty.Register("AppBarOpacity", typeof(double), typeof(MainPage), new PropertyMetadata(AppBarSemitransparentOpacity,
+            new PropertyChangedCallback((o, a) => ((MainPage)o).ApplicationBar.Opacity = (double)a.NewValue )));
+
+[/sourcecode]
+
+Is that sexy or what?  When our <strong>AppBarOpacity</strong> property gets updated, the PropertyChangedCallback we have defined will propagate new new double value to the AppBar.Opacity.  So, we are wrapping AppBar.Opacity which is a normal CLR property with AppBarOpacity which is a DependencyProperty.
+
+<br />
+<span style="font-size:24; text-decoration: underline;">Animating on AppBarOpacity</span>
+
+Now for the actual animations.  In MainPage.xaml, set give the MainPage a name:
+[sourcecode language="xml" highlight="3"]
+<phone:PhoneApplicationPage
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    x:Name="Page"
+[/sourcecode]
+
+And create the animations as resources:
+[sourcecode language="xml"]
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="AppBarFadeOutStoryboard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="AppBarOpacity" Storyboard.TargetName="Page">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="{StaticResource AppBarSemitransparentOpacity}"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="AppBarFadeInStoryboard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="AppBarOpacity" Storyboard.TargetName="Page">
+                <EasingDoubleKeyFrame KeyTime="0" Value="{StaticResource AppBarSemitransparentOpacity}"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+[/sourcecode]
+
+Of course, Expression Blend is great for defining complex animations using key frames and playing them back.
+
+<br />
+<span style="font-size:24; text-decoration: underline;">Hooking into the animations</span>
+
+Flesh out the code behind for ApplicationBar_StateChanged like so:
+
+[sourcecode language="csharp"]
+        private void ApplicationBar_StateChanged(object sender, Microsoft.Phone.Shell.ApplicationBarStateChangedEventArgs e)
+        {
+            var appBar = sender as ApplicationBar;
+            Storyboard storyboard = e.IsMenuVisible ? (Storyboard)Resources["AppBarFadeInStoryboard"] : (Storyboard)Resources["AppBarFadeOutStoryboard"];
+            storyboard.Begin();
+        }
+[/sourcecode]
+
