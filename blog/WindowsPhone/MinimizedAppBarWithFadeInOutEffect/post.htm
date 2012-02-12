@@ -2,6 +2,12 @@
 
 I want my AppBar to be semitransparent when minimized but opaque when expanded.  That's fine, there's built-in support for that (see <strong><a href="http://blog.jayway.com/2011/08/12/show-a-minimzed-panorama-application-bar/">Jayway Team blog</a></strong>), but I want to <strong>smoothly animate transparency on my AppBar</strong> instead of just toggling between two values abruptly.
 
+<a href="http://finnigantime.files.wordpress.com/2012/02/animation.png"><img class="alignnone size-full wp-image-31" title="animation" src="http://finnigantime.files.wordpress.com/2012/02/animation.png" alt="" width="640" height="384" /></a>
+
+<h4>The code from this post is available on github here:</h4>
+<a href="https://github.com/puhfyn/Samples/tree/master/blog/WindowsPhone/MinimizedAppBarWithFadeInOutEffect/">https://github.com/puhfyn/Samples/tree/master/blog/WindowsPhone/MinimizedAppBarWithFadeInOutEffect/</a>
+
+<br />
 <h1>FadeIn/FadeOut instead of toggling between two opacity values</h1>
 
 This seems a bit tricky at first.  AppBar has an Opacity property, but <a href="http://msdn.microsoft.com/en-us/library/microsoft.phone.shell.applicationbar(v=vs.92).aspx">AppBar inherits from <strong>object</strong></a> and Opacity is not exposed as a DependencyProperty.  So, there's no built-in support for binding/animating this property or any other property on AppBar.  I thought of a few ways to go here but once I had played around with the code a bit until the path became clear - add a new AppBarOpacity DP to page and animate on it, while plumbing the new values to Page.AppBar.Opacity.

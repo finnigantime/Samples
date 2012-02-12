@@ -25,7 +25,7 @@
         <Storyboard x:Name="AppBarFadeInStoryboard">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="AppBarOpacity" Storyboard.TargetName="Page">
                 <EasingDoubleKeyFrame KeyTime="0" Value="{StaticResource AppBarSemitransparentOpacity}"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.7"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </phone:PhoneApplicationPage.Resources>
