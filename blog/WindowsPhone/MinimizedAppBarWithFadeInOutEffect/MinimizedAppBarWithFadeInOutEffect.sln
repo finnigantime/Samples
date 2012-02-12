@@ -4,15 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimizedAppBarWithFadeInOutEffect", "MinimizedAppBarWithFadeInOutEffect\MinimizedAppBarWithFadeInOutEffect.csproj", "{C8F3AB58-B42C-4AD7-B3E3-9086743C3724}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://finnigan.tfspreview.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MinimizedAppBarWithFadeInOutEffect\\MinimizedAppBarWithFadeInOutEffect.csproj
-		SccProjectName1 = MinimizedAppBarWithFadeInOutEffect
-		SccLocalPath1 = MinimizedAppBarWithFadeInOutEffect
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

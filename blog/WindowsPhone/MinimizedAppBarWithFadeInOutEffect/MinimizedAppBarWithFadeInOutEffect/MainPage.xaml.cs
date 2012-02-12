@@ -16,8 +16,6 @@ namespace MinimizedAppBarWithFadeInOutEffect
 {
     public partial class MainPage : PhoneApplicationPage
     {
-        static double AppBarSemitransparentOpacity = 0.45;
-
         public double AppBarOpacity
         {
             get { return (double)GetValue(AppBarOpacityProperty); }
@@ -26,8 +24,9 @@ namespace MinimizedAppBarWithFadeInOutEffect
 
         // Using a DependencyProperty as the backing store for AppBarOpacity.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty AppBarOpacityProperty =
-            DependencyProperty.Register("AppBarOpacity", typeof(double), typeof(MainPage), new PropertyMetadata(AppBarSemitransparentOpacity,
-                new PropertyChangedCallback((o, a) => ((MainPage)o).ApplicationBar.Opacity = (double)a.NewValue )));
+            DependencyProperty.Register("AppBarOpacity", typeof(double), typeof(MainPage),
+                new PropertyMetadata(App.Current.Resources["AppBarSemitransparentOpacity"],
+                    new PropertyChangedCallback((o, a) => ((MainPage)o).ApplicationBar.Opacity = (double)a.NewValue )));
 
         // Constructor
         public MainPage()

@@ -15,24 +15,24 @@ This seems a bit tricky at first.  AppBar has an Opacity property, but <a href="
 <br />
 <span style="font-size:24; text-decoration: underline;">Adding the AppBar</span>
 
-In VisualStudio, I'm starting from a new Windows Phone Application.  First, I want to define a constant for the Opacity my AppBar will have when minimized and faded out.  I will add this as a StaticResource to MainPage.xaml. First, let's include the System namespace from mscorlib:
+In VisualStudio, I'm starting from a new Windows Phone Application.  First, I want to define a constant for the Opacity my AppBar will have when minimized and faded out.  I will add this as a StaticResource to App.xaml. First, let's include the System namespace from mscorlib:
 
-[sourcecode language="xml" highlight="2"]
-<phone:PhoneApplicationPage
+[sourcecode gutter="false" language="xml" highlight="2"]
+<Application
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
 [/sourcecode]
 
 Then, define the constant:
 
-[sourcecode language="xml" highlight="2"]
-<phone:PhoneApplicationPage.Resources>
-    <sys:Double x:Key="AppBarSemitransparentOpacity">0.45</sys:Double>
-</phone:PhoneApplicationPage.Resources>
+[sourcecode gutter="false" language="xml" highlight="2"]
+    <Application.Resources>
+        <sys:Double x:Key="AppBarSemitransparentOpacity">0.45</sys:Double>
+    </Application.Resources>
 [/sourcecode]
 
 Next, uncomment the AppBar portion of MainPage.xaml and change a few properties:
 
-[sourcecode language="xml" highlight="2,6,7,8"]
+[sourcecode gutter="false" language="xml" highlight="2,6,7,8"]
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar x:Name="MyAppBar"
                               BackgroundColor="Orange"
@@ -53,14 +53,6 @@ Next, uncomment the AppBar portion of MainPage.xaml and change a few properties:
 
 When setting the StateChanged callback, type ApplicationBar_StateChanged and press tab to have VS generate some code behind for you.  We'll revisit this later.
 
-Then, add the same constant to MainPage.xaml.cs. Yeah, it's too bad that you can't bind to static properties in SL like you can in WPF and there's probably a better way to achieve this rather than duplicating the constant definition, but we'll go with this for purposes of our scenario:
-
-[sourcecode language="csharp" highlight="3"]
-public partial class MainPage : PhoneApplicationPage
-{
-    static double AppBarSemitransparentOpacity = 0.45;
-[/sourcecode]
-
 <br />
 <span style="font-size:24; text-decoration: underline;">Defining a new DependencyProperty</span>
 
@@ -68,7 +60,7 @@ In MainPage.xaml.cs, inside the MainPage class, start typing <strong>propdp</str
 <div><a href="http://finnigantime.files.wordpress.com/2012/02/propdp.png"><img class="alignnone size-full wp-image-19" title="propdp" src="http://finnigantime.files.wordpress.com/2012/02/propdp.png" alt="" width="640" height="103" /></a></div>
 Press <strong>tab</strong> twice to expand it.  Name it <strong>AppBarOpacity</strong>, make it of type double, register MainPage as the owner class, rename the metadata class type from UIPropertyMetadata to PropertyMetadata, and give it some default metadata like so:
 
-[sourcecode language="csharp"]
+[sourcecode gutter="false" language="csharp"]
     public double AppBarOpacity
     {
         get { return (double)GetValue(AppBarOpacityProperty); }
@@ -77,8 +69,9 @@ Press <strong>tab</strong> twice to expand it.  Name it <strong>AppBarOpacity</s
 
     // Using a DependencyProperty as the backing store for AppBarOpacity.  This enables animation, styling, binding, etc...
     public static readonly DependencyProperty AppBarOpacityProperty =
-        DependencyProperty.Register("AppBarOpacity", typeof(double), typeof(MainPage), new PropertyMetadata(AppBarSemitransparentOpacity,
-            new PropertyChangedCallback((o, a) => ((MainPage)o).ApplicationBar.Opacity = (double)a.NewValue )));
+        DependencyProperty.Register("AppBarOpacity", typeof(double), typeof(MainPage),
+            new PropertyMetadata(App.Current.Resources["AppBarSemitransparentOpacity"],
+                new PropertyChangedCallback((o, a) => ((MainPage)o).ApplicationBar.Opacity = (double)a.NewValue )));
 
 [/sourcecode]
 
@@ -88,14 +81,14 @@ Is that sexy or what?  When our <strong>AppBarOpacity</strong> property gets upd
 <span style="font-size:24; text-decoration: underline;">Animating on AppBarOpacity</span>
 
 Now for the actual animations.  In MainPage.xaml, set give the MainPage a name:
-[sourcecode language="xml" highlight="3"]
+[sourcecode gutter="false" language="xml" highlight="3"]
 <phone:PhoneApplicationPage
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:Name="Page"
 [/sourcecode]
 
 And create the animations as resources:
-[sourcecode language="xml"]
+[sourcecode gutter="false" language="xml"]
     <phone:PhoneApplicationPage.Resources>
         <Storyboard x:Name="AppBarFadeOutStoryboard">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="AppBarOpacity" Storyboard.TargetName="Page">
@@ -119,7 +112,7 @@ Of course, Expression Blend is great for defining complex animations using key f
 
 Flesh out the code behind for ApplicationBar_StateChanged like so:
 
-[sourcecode language="csharp"]
+[sourcecode gutter="false" language="csharp"]
         private void ApplicationBar_StateChanged(object sender, Microsoft.Phone.Shell.ApplicationBarStateChangedEventArgs e)
         {
             var appBar = sender as ApplicationBar;
