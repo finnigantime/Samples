@@ -1,14 +1,13 @@
 
 <h2>The problem:</h2>
-Post 2/2.  In <a href="">post 1</a> of this series, we created an AppBar that is semitransparent when minimized but opaque when expanded, and has a smooth fade effect on its Opacity between these two states.  However, if our app uses NavigationService across multiple pages, and we want to reuse a single AppBar across our app, we need to modify our code in a few ways to achieve this scenario.
+Post 2/2.  In <a href="http://finnigantime.wordpress.com/2012/02/11/wp7-minimized-appbar-with-fadeinfadeout-effect/">post 1</a> of this series, we created an AppBar that is semitransparent when minimized but opaque when expanded, and has a smooth fade effect on its Opacity between these two states.  However, if our app uses NavigationService across multiple pages, and we want to reuse a single AppBar across our app, we need to modify our code in a few ways to achieve this scenario.
 
-<h4>The code from this post is available on github here:</h4>
-<a href=""></a>
+<h4>The code from this post is available on github <a href="https://github.com/finnigantime/Samples/tree/master/blog/2012/WP_MinimizedAppBarWithFade_AppWide">here</a>.</h4>
 
 <br />
 <h1>Making this work app-wide</h1>
 
-Start by completing <a href="">post 1</a>. Now, how to make this work app-wide on a single AppBar instance?  As Jeff Probst would say, first things first, we need to move the AppBar to App.xaml's resources.
+Start by completing <a href="http://finnigantime.wordpress.com/2012/02/11/wp7-minimized-appbar-with-fadeinfadeout-effect/">post 1</a>. Now, how to make this work app-wide on a single AppBar instance?  As Jeff Probst would say, first things first, we need to move the AppBar to App.xaml's resources.
 
 [sourcecode gutter="false" language="xml"]
     <Application.Resources>
