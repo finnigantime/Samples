@@ -1,0 +1,106 @@
+
+<h2>The problem:</h2>
+Post 2/2.  In <a href="">post 1</a> of this series, we created an AppBar that is semitransparent when minimized but opaque when expanded, and has a smooth fade effect on its Opacity between these two states.  However, if our app uses NavigationService across multiple pages, and we want to reuse a single AppBar across our app, we need to modify our code in a few ways to achieve this scenario.
+
+<h4>The code from this post is available on github here:</h4>
+<a href=""></a>
+
+<br />
+<h1>Making this work app-wide</h1>
+
+Start by completing <a href="">post 1</a>. Now, how to make this work app-wide on a single AppBar instance?  As Jeff Probst would say, first things first, we need to move the AppBar to App.xaml's resources.
+
+[sourcecode gutter="false" language="xml"]
+    <Application.Resources>
+        <sys:Double x:Key="AppBarSemitransparentOpacity">0.45</sys:Double>
+
+        <!--Sample code showing usage of ApplicationBar-->
+        <shell:ApplicationBar x:Name="MyAppBar"
+                              BackgroundColor="Orange"
+                              IsVisible="True"
+                              IsMenuEnabled="True"
+                              Mode="Minimized"
+                              StateChanged="ApplicationBar_StateChanged"
+                              Opacity="{StaticResource AppBarSemitransparentOpacity}">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+[/sourcecode]
+
+Also, move the FadeIn/FadeOut storyboards to Application.Resources in App.xaml.  Make a couple of modifications here - remove Storyboard.TargetName, and rename Storyboard.TargetProperty's value to "Opacity".  I'll show why this is necessary in a second...
+
+[sourcecode gutter="false" language="xml"]
+        <Storyboard x:Name="AppBarFadeOutStoryboard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="{StaticResource AppBarSemitransparentOpacity}"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="AppBarFadeInStoryboard">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                <EasingDoubleKeyFrame KeyTime="0" Value="{StaticResource AppBarSemitransparentOpacity}"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+[/sourcecode]
+
+Great, we're done with App.xaml.  Now, we need to move ApplicationBar_StateChanged to App.xaml.cs:
+
+[sourcecode gutter="false" language="csharp"]
+
+    public partial class App : Application
+    {
+        private void ApplicationBar_StateChanged(object sender, Microsoft.Phone.Shell.ApplicationBarStateChangedEventArgs e)
+        {
+            var appBar = sender as ApplicationBar;
+            Storyboard storyboard = e.IsMenuVisible ? (Storyboard)Resources["AppBarFadeInStoryboard"] : (Storyboard)Resources["AppBarFadeOutStoryboard"];
+            storyboard.Begin();
+        }
+
+[/sourcecode]
+
+<br />
+<span style="font-size:24; text-decoration: underline;">DependencyProperty storage for AppBar.Opacity</span>
+Previously we had created a DP (DependencyProperty) in Page that we could animate on and drive AppBar.Opacity with.  However, the Application class is not a DO (DependencyObject).  Thus, we need to create a DO.  Add a new C# file to the project and name it <strong>AppBarWrapper.cs</strong>.  Change its base class to be <strong>DependencyObject</strong>.  Using the <strong>propdp</strong> snippet, add a new DP to the class as follows (and delete the old AppBarOpacity DP from MainPage.xaml.cs):
+
+[sourcecode gutter="false" language="csharp"]
+        public double Opacity
+        {
+            get { return (double)GetValue(OpacityProperty); }
+            set { SetValue(OpacityProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Opacity.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty OpacityProperty =
+            DependencyProperty.Register("Opacity", typeof(double), typeof(AppBarWrapper),
+                new PropertyMetadata(App.Current.Resources["AppBarSemitransparentOpacity"],
+                    new PropertyChangedCallback((o, a) => ((ApplicationBar)App.Current.Resources["MyAppBar"]).Opacity = (double)a.NewValue )));
+[/sourcecode]
+
+<br />
+<span style="font-size:24; text-decoration: underline;">Wiring it together</span>
+Almost there.  Return to App.xaml.cs and add the following at the bottom of the constructor for <strong>App()</strong>:
+
+[sourcecode gutter="false" language="csharp"]
+            AppBarWrapper appBarWrapper = new AppBarWrapper();
+            Storyboard fadeInStoryboard = (Storyboard)Resources["AppBarFadeInStoryboard"];
+            Storyboard fadeOutStoryboard = (Storyboard)Resources["AppBarFadeOutStoryboard"];
+            Storyboard.SetTarget(fadeInStoryboard, appBarWrapper);
+            Storyboard.SetTarget(fadeOutStoryboard, appBarWrapper);
+[/sourcecode]
+
+Here we are instantiating our DP storage <strong>AppBarWrapper</strong> as a local instance.  We don't need to persist it as a member since our Storyboards, which are resources in App.xaml, will keep a reference to it alive for the duration of the app when we call <strong>Storyboard.SetTarget()</strong>.
+
+Last step. Return to MainPage.xaml and remove x:Name="Page"; we don't need it any more.  Replace it with a reference to our app-wide AppBar:
+
+[sourcecode gutter="false" language="csharp" highlight="2"]
+<phone:PhoneApplicationPage
+    ApplicationBar="{StaticResource MyAppBar}"
+[/sourcecode]
+
+And we're done!  You can add a second page to your app and hook it up through NavigationService.Navigate to test it out.
+
