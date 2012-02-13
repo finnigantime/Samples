@@ -1,8 +1,8 @@
 
+<h4>The code from this post is available on github <a href="https://github.com/finnigantime/Samples/tree/master/blog/2012/WP_MinimizedAppBarWithFade_AppWide">here</a>.</h4>
+
 <h2>The problem:</h2>
 Post 2/2.  In <a href="http://finnigantime.wordpress.com/2012/02/11/wp7-minimized-appbar-with-fadeinfadeout-effect/">post 1</a> of this series, we created an AppBar that is semitransparent when minimized but opaque when expanded, and has a smooth fade effect on its Opacity between these two states.  However, if our app uses NavigationService across multiple pages, and we want to reuse a single AppBar across our app, we need to modify our code in a few ways to achieve this scenario.
-
-<h4>The code from this post is available on github <a href="https://github.com/finnigantime/Samples/tree/master/blog/2012/WP_MinimizedAppBarWithFade_AppWide">here</a>.</h4>
 
 <br />
 <h1>Making this work app-wide</h1>
@@ -64,6 +64,7 @@ Great, we're done with App.xaml.  Now, we need to move ApplicationBar_StateChang
 
 <br />
 <span style="font-size:24; text-decoration: underline;">DependencyProperty storage for AppBar.Opacity</span>
+
 Previously we had created a DP (DependencyProperty) in Page that we could animate on and drive AppBar.Opacity with.  However, the Application class is not a DO (DependencyObject).  Thus, we need to create a DO.  Add a new C# file to the project and name it <strong>AppBarWrapper.cs</strong>.  Change its base class to be <strong>DependencyObject</strong>.  Using the <strong>propdp</strong> snippet, add a new DP to the class as follows (and delete the old AppBarOpacity DP from MainPage.xaml.cs):
 
 [sourcecode gutter="false" language="csharp"]
@@ -82,6 +83,7 @@ Previously we had created a DP (DependencyProperty) in Page that we could animat
 
 <br />
 <span style="font-size:24; text-decoration: underline;">Wiring it together</span>
+
 Almost there.  Return to App.xaml.cs and add the following at the bottom of the constructor for <strong>App()</strong>:
 
 [sourcecode gutter="false" language="csharp"]
