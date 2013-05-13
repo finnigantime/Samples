@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SEVERIAN</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>79B9F5A0252533BB452401C0FDA568FB330ECE33C23CEEAC2DC96F90CB9C17A4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>317946df-5ddd-4d38-bc3d-dad6588414a7_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>317946df-5ddd-4d38-bc3d-dad6588414a7_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>317946df-5ddd-4d38-bc3d-dad6588414a7</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-13T07:02:52.227</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\Slider_OverrideDisabledResources.exe">
+      <PackagePath>Slider_OverrideDisabledResources.exe</PackagePath>
+      <Modified>2013-05-13T07:02:52.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\Slider_OverrideDisabledResources.pdb">
+      <PackagePath>Slider_OverrideDisabledResources.pdb</PackagePath>
+      <Modified>2013-05-13T07:02:52.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-05-13T06:54:50.730</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-05-13T06:55:11.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_OverrideDisabledResources\Slider_OverrideDisabledResources\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-05-13T07:02:52.155</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

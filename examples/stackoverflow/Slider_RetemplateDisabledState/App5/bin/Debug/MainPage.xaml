@@ -83,7 +83,7 @@
         										<DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SliderTrackDisabledBackgroundThemeBrush}"/>
         									</ObjectAnimationUsingKeyFrames>
         									<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="HorizontalThumb">
-        										<DiscreteObjectKeyFrame KeyTime="0" Value="Orange"/>
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Orange"/>
         									</ObjectAnimationUsingKeyFrames>
         									<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="HorizontalThumb">
         										<DiscreteObjectKeyFrame KeyTime="0" Value="Yellow"/>

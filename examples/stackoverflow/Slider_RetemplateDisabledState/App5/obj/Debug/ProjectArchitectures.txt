@@ -1,1 +1,1 @@
-C:\Users\pafinnig\documents\visual studio 2012\Projects\App5\App5\Slider_RetemplateDisabledState.csproj;neutral
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\stackoverflow\Slider_RetemplateDisabledState\App5\Slider_RetemplateDisabledState.csproj;neutral
