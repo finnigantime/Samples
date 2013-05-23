@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="REBCrash.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:REBCrash"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style x:Key="MyStyle" TargetType="RichEditBox">
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="{StaticResource TextControlBorderThemeThickness}"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Orientation="Vertical" Background="DarkGray">
+        <TextBlock Text="Lable for this Field:" FontSize="20" />
+        <RichEditBox x:ConnectionId='1' Name="REB_Value"
+                                                                        
+                                                                    
+                     Style="{StaticResource MyStyle}">
+        </RichEditBox>
+        <Button x:ConnectionId='2'                        Content="Set REB text" />
+    </StackPanel>
+
+</Page>
+
