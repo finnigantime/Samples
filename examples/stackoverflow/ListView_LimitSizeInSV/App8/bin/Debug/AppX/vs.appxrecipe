@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SEVERIAN</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>E4D215CCEA035D083E81287525AC4FCB20FB3F503FAB8D16631A0EE7E899EC31</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e273138b-aadf-4abe-902f-8ed57c10fffe_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e273138b-aadf-4abe-902f-8ed57c10fffe_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e273138b-aadf-4abe-902f-8ed57c10fffe</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-05-26T18:49:44.321</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\App8.exe">
+      <PackagePath>App8.exe</PackagePath>
+      <Modified>2013-05-26T19:01:07.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\App8.pdb">
+      <PackagePath>App8.pdb</PackagePath>
+      <Modified>2013-05-26T19:01:07.302</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-05-26T18:48:16.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-05-26T18:59:58.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\MyUserControl.xaml">
+      <PackagePath>MyUserControl.xaml</PackagePath>
+      <Modified>2013-05-26T18:59:47.613</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\Themes\Generic.xaml">
+      <PackagePath>Themes\Generic.xaml</PackagePath>
+      <Modified>2013-05-26T18:51:47.873</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\App8\App8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-05-26T18:49:44.271</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

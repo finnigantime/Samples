@@ -9,17 +9,17 @@
 
 
 
-namespace App5
+namespace App8
 {
     public partial class App : global::Windows.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        private global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider _provider;
 
         public global::Windows.UI.Xaml.Markup.IXamlType GetXamlType(global::System.Type type)
         {
             if(_provider == null)
             {
-                _provider = new global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByType(type);
         }
@@ -28,7 +28,7 @@ namespace App5
         {
             if(_provider == null)
             {
-                _provider = new global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider();
+                _provider = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider();
             }
             return _provider.GetXamlTypeByName(fullName);
         }
@@ -40,7 +40,7 @@ namespace App5
     }
 }
 
-namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
+namespace App8.LimitingSizeOfControlInSV_XamlTypeInfo
 {
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
@@ -112,27 +112,47 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
             }
         }
 
-        private object Activate_0_MainPage() { return new global::App5.MainPage(); }
+        private object Activate_0_MyUserControl() { return new global::App8.MyUserControl(); }
+
+        private object Activate_1_MainPage() { return new global::App8.MainPage(); }
+
+        private object Activate_2_HeaderRow() { return new global::App8.HeaderRow(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
         {
-            global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlUserType userType;
+            global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlUserType userType;
 
             switch (typeName)
             {
-            case "Windows.UI.Xaml.Controls.Page":
-                xamlType = new global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
-                break;
-
             case "Windows.UI.Xaml.Controls.UserControl":
-                xamlType = new global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
+                xamlType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
                 break;
 
-            case "App5.MainPage":
-                userType = new global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::App5.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case "Windows.UI.Xaml.Controls.Page":
+                xamlType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
+                break;
+
+            case "Windows.UI.Xaml.Controls.ContentControl":
+                xamlType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ContentControl));
+                break;
+
+            case "App8.MyUserControl":
+                userType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::App8.MyUserControl), GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_0_MyUserControl;
+                xamlType = userType;
+                break;
+
+            case "App8.MainPage":
+                userType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::App8.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_1_MainPage;
+                xamlType = userType;
+                break;
+
+            case "App8.HeaderRow":
+                userType = new global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::App8.HeaderRow), GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
+                userType.Activator = Activate_2_HeaderRow;
                 xamlType = userType;
                 break;
 
@@ -144,7 +164,7 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlMember xamlMember = null;
+            global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlMember xamlMember = null;
             // No Local Properties
             return xamlMember;
         }
@@ -200,9 +220,9 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Windows.UI.Xaml.Build.Tasks", "4.0.0.0")]    
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlSystemBaseType
     {
-        global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Windows.UI.Xaml.Markup.IXamlType _baseType;
         bool _isArray;
         bool _isMarkupExtension;
@@ -214,7 +234,7 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Windows.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -395,7 +415,7 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Windows.UI.Xaml.Markup.IXamlMember
     {
-        global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -404,7 +424,7 @@ namespace App5.Slider_RetemplateDisabledState_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::App5.Slider_RetemplateDisabledState_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::App8.LimitingSizeOfControlInSV_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;
