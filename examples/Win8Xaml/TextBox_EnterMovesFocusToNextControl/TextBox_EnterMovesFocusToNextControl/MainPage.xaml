@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="TextBox_EnterMovesFocusToNextControl.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TextBox_EnterMovesFocusToNextControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="Teal" Margin="100">
+        <TextBlock Margin="20" Text="Some Form Header:"/>
+        <TextBox Width="200" HorizontalAlignment="Left" Margin="20" KeyUp="TextBox_KeyUp" />
+        <TextBox Width="200" HorizontalAlignment="Left" Margin="20" KeyUp="TextBox_KeyUp" />
+        <TextBox Width="200" HorizontalAlignment="Left" Margin="20" KeyUp="TextBox_KeyUp" />
+        <TextBox Width="200" HorizontalAlignment="Left" Margin="20" KeyUp="TextBox_KeyUp" />
+        <Button Margin="10">Submit</Button>
+    </StackPanel>
+</Page>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PKFVULCAN</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>6FB38DE2C44EFFEC508FB2864B070C346FC90D32679557999BA2EF1D07F78FFD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>549f5fb8-23dc-43f8-87e8-a9d5d7ffde38_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>549f5fb8-23dc-43f8-87e8-a9d5d7ffde38_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>549f5fb8-23dc-43f8-87e8-a9d5d7ffde38</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-14T19:28:41.613</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\TextBox_EnterMovesFocusToNextControl.exe">
+      <PackagePath>TextBox_EnterMovesFocusToNextControl.exe</PackagePath>
+      <Modified>2013-07-14T19:28:41.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\TextBox_EnterMovesFocusToNextControl.pdb">
+      <PackagePath>TextBox_EnterMovesFocusToNextControl.pdb</PackagePath>
+      <Modified>2013-07-14T19:28:41.472</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-07-14T19:22:28.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-07-14T19:22:35.052</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\Visual Studio 2012\Projects\TextBox_EnterMovesFocusToNextControl\TextBox_EnterMovesFocusToNextControl\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-07-14T19:28:41.572</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
