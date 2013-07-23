@@ -1,1 +1,1 @@
-c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\UserControl_FocusExample.csproj;neutral
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\UserControl_FocusExample.csproj;neutral

@@ -9,7 +9,10 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Margin="100">
-            <UserControl x:ConnectionId='1'                                                                   IsTabStop="True"
+            <UserControl x:ConnectionId='1'                                              
+                                                        
+                                                          
+                         IsTabStop="True"
                          Height="100" Width="100">
                 <Rectangle x:Name="rect" />
             </UserControl>

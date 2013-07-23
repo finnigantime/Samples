@@ -14,46 +14,46 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2013-07-23T18:12:12.479</Modified>
+      <Modified>2013-07-23T20:23:06.821</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\bin\Debug\App6.exe">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App6.exe">
       <PackagePath>App6.exe</PackagePath>
-      <Modified>2013-07-23T18:16:16.691</Modified>
+      <Modified>2013-07-23T20:23:06.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-27T06:45:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-27T06:45:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-27T06:45:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-04-27T06:45:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2013-07-23T18:11:04.704</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2013-07-23T18:16:16.538</Modified>
+      <Modified>2013-07-23T19:00:21.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2013-07-23T18:12:12.415</Modified>
     </AppxPackagedFile>

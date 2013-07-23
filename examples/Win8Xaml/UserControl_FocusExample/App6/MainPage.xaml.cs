@@ -37,5 +37,11 @@ namespace App6
         {
             rect.Fill = new SolidColorBrush(Colors.Beige);
         }
+
+        private void UserControl_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            ((UserControl)sender).Focus(FocusState.Pointer);
+            e.Handled = true;
+        }
     }
 }

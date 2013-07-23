@@ -9,7 +9,10 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Margin="100">
-            <UserControl GotFocus="UserControl_GotFocus" LostFocus="UserControl_LostFocus" IsTabStop="True"
+            <UserControl PointerReleased="UserControl_PointerReleased"
+                         GotFocus="UserControl_GotFocus"
+                         LostFocus="UserControl_LostFocus"
+                         IsTabStop="True"
                          Height="100" Width="100">
                 <Rectangle x:Name="rect" />
             </UserControl>

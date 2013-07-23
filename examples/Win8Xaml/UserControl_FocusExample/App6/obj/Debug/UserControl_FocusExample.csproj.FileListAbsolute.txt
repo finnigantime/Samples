@@ -30,3 +30,35 @@ c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\obj\Debug\qual
 c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\obj\Debug\resources.pri.xml
 c:\users\pafinnig\documents\visual studio 2013\Projects\App6\App6\obj\Debug\ProjectArchitectures.txt
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App.xbf
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\MainPage.xbf
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App6.exe
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App6.pdb
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\resources.pri
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\AppxManifest.xml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\UserControl_FocusExample.build.appxrecipe
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App.g.i.cs
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App.g.cs
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\MainPage.g.i.cs
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\MainPage.g.cs
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App.xaml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\MainPage.xaml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App.xbf
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\MainPage.xbf
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\XamlSaveStateFile.xml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App6.exe
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\App6.pdb
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\priconfig.xml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\priconfig.xml.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\layout.resfiles
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\layout.resfiles.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\resources.resfiles
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\resources.resfiles.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\pri.resfiles
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\pri.resfiles.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\qualifiers.txt
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\qualifiers.txt.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\resources.pri.xml
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\obj\Debug\ProjectArchitectures.txt
