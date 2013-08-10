@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PKFVULCAN</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>2F80175AD017E9D8C8938B74FE75FB69AAAACCBCC8B70383C1430F3F362D1ED3</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>25262446-8e63-4d88-9ec0-77da21511383_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>25262446-8e63-4d88-9ec0-77da21511383_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>25262446-8e63-4d88-9ec0-77da21511383</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-10T20:27:19.615</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\GridViewItemLoadedUnloadedAnimations.exe">
+      <PackagePath>GridViewItemLoadedUnloadedAnimations.exe</PackagePath>
+      <Modified>2013-08-10T20:30:18.015</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\GridViewItemLoadedUnloadedAnimations.pdb">
+      <PackagePath>GridViewItemLoadedUnloadedAnimations.pdb</PackagePath>
+      <Modified>2013-08-10T20:30:17.995</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-08-10T20:22:02.363</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-08-10T20:30:17.308</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\GridViewItemLoadedUnloadedAnimations\GridViewItemLoadedUnloadedAnimations\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-08-10T20:27:19.480</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

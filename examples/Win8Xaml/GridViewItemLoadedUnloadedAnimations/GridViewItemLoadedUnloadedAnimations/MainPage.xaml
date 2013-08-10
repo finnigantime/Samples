@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="GridViewItemLoadedUnloadedAnimations.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GridViewItemLoadedUnloadedAnimations"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <GridView x:Name="MyGV">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Loaded="Grid_Loaded" x:Name="TemplateRoot" Opacity="0" Background="White">
+                        <Grid.Resources>
+                            <Storyboard x:Key="LoadedStoryboard">
+                                <DoubleAnimation Storyboard.TargetName="TemplateRoot"
+                                                 Storyboard.TargetProperty="Opacity"
+                                                 BeginTime="0:0:1"
+                                                 Duration="0:0:5"
+                                                 To="1" />
+                            </Storyboard>
+                        </Grid.Resources>
+                        <TextBlock Text="{Binding}" FontSize="24" Foreground="Black" Margin="40" />
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>
