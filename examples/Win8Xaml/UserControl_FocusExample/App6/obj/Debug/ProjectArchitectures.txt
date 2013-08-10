@@ -1,0 +1,1 @@
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\UserControl_FocusExample.csproj;neutral

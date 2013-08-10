@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>pafinnigz</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ddc03ede-2eaa-4317-92d6-b7aa499e9275</PackageIdentityName>
+    <RegisteredManifestChecksum>2724C794BFD59B182EE677B679904668614A0B0F9BC032672719D499ED6081BD</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ddc03ede-2eaa-4317-92d6-b7aa499e9275_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ddc03ede-2eaa-4317-92d6-b7aa499e9275_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ddc03ede-2eaa-4317-92d6-b7aa499e9275</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T20:23:06.821</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App6.exe">
+      <PackagePath>App6.exe</PackagePath>
+      <Modified>2013-07-23T20:23:06.655</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-27T06:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-27T06:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-27T06:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-04-27T06:45:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2013-07-23T18:11:04.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2013-07-23T19:00:21.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\UserControl_FocusExample\App6\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-07-23T18:12:12.415</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
