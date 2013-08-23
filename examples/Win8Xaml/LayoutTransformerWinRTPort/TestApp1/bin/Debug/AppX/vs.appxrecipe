@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PAFINNIGDEVX</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>8AD8699DFC1B1D72E4D324E7F790D6F0330744C6C42A678C863778D761026632</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6bbf8721-ef73-47d7-ab18-62be2128d047_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6bbf8721-ef73-47d7-ab18-62be2128d047_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6bbf8721-ef73-47d7-ab18-62be2128d047</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-08-23T00:50:34.759</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\TestApp1.exe">
+      <PackagePath>TestApp1.exe</PackagePath>
+      <Modified>2013-08-23T00:50:34.584</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\TestApp1.pdb">
+      <PackagePath>TestApp1.pdb</PackagePath>
+      <Modified>2013-08-23T00:50:34.562</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\LayoutTransformerWinRTPort.pdb">
+      <PackagePath>LayoutTransformerWinRTPort.pdb</PackagePath>
+      <Modified>2013-08-23T00:50:33.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\LayoutTransformerWinRTPort.winmd">
+      <PackagePath>LayoutTransformerWinRTPort.winmd</PackagePath>
+      <Modified>2013-08-23T00:50:33.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-08-23T00:39:25.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-08-23T00:50:32.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\Themes\Generic.xaml">
+      <PackagePath>LayoutTransformerWinRTPort\Themes\Generic.xaml</PackagePath>
+      <Modified>2013-08-23T00:41:30.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-08-23T00:49:03.059</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

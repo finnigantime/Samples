@@ -1,0 +1,16 @@
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\Themes\Generic.g.i.cs
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\Themes\Generic.g.cs
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\XamlTypeInfo.g.cs
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\LayoutTransformerWinRTPort.compile.pdb
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\Themes\Generic.xaml
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\LayoutTransformerWinRTPort.winmd
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\LayoutTransformerWinRTPort.winmdobj
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\LayoutTransformerWinRTPort.winmd
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\LayoutTransformerWinRTPort.pdb
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\bin\Debug\LayoutTransformerWinRTPort.pri
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\LayoutTransformerWinRTPort.pdb
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\priconfig.xml
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\layout.resfiles
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\resources.resfiles
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\pri.resfiles
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\obj\Debug\LanguageQualifiers.txt
