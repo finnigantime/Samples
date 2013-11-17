@@ -21,3 +21,7 @@ C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_Pannin
 C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\pri.resfiles
 C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\LanguageQualifiers.txt
 C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\ProjectArchitectures.txt
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\priconfig.xml.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\layout.resfiles.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\resources.resfiles.intermediate
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\obj\Debug\pri.resfiles.intermediate
