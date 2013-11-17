@@ -1,0 +1,2 @@
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort\LayoutTransformerWinRTPort.csproj;neutral
+c:\users\pafinnig\documents\visual studio 2012\Projects\LayoutTransformerWinRTPort\TestApp1\TestApp1.csproj;neutral
