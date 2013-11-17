@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PKFVULCAN</Machine>
+    <WindowsUser>pafinnig</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>CC79CA99D098A54C43363B70F5BE6F979E34BADCFBC555A114E1BD0CAB5C7AAC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>026a6d06-bb36-40a8-ad00-f11ca4e8d515_1.0.0.0_neutral__47w5ea11ct698</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>026a6d06-bb36-40a8-ad00-f11ca4e8d515_47w5ea11ct698!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>026a6d06-bb36-40a8-ad00-f11ca4e8d515</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pafinnig</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-11-17T01:21:24.963</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\ScrollViewer_PanningIndicatorsOnly.exe">
+      <PackagePath>ScrollViewer_PanningIndicatorsOnly.exe</PackagePath>
+      <Modified>2013-11-17T01:38:12.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\ScrollViewer_PanningIndicatorsOnly.pdb">
+      <PackagePath>ScrollViewer_PanningIndicatorsOnly.pdb</PackagePath>
+      <Modified>2013-11-17T01:38:12.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-11-17T01:19:16.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-11-17T01:38:09.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-11-17T01:21:07.976</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

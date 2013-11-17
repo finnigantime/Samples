@@ -1,0 +1,1 @@
+C:\Users\pafinnig\Documents\GitHub\Samples\examples\Win8Xaml\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly\ScrollViewer_PanningIndicatorsOnly.csproj;neutral
