@@ -30,6 +30,7 @@ namespace SettingsFlyout_AnimateOut
 
             BackClick += SettingsFlyout1_BackClick;
             Unloaded += SettingsFlyout1_Unloaded;
+            Tapped += SettingsFlyout1_Tapped;
         }
 
         void SettingsFlyout1_BackClick(object sender, BackClickEventArgs e)
@@ -43,6 +44,11 @@ namespace SettingsFlyout_AnimateOut
             {
                 _p.IsOpen = false;
             }
+        }
+
+        void SettingsFlyout1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            e.Handled = true;
         }
 
         public void ShowCustom()
