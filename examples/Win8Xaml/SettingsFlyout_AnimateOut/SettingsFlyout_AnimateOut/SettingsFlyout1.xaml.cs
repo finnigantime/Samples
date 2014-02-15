@@ -23,6 +23,7 @@ namespace SettingsFlyout_AnimateOut
     public sealed partial class SettingsFlyout1 : SettingsFlyout
     {
         Popup _p;
+        Border _b;
         
         public SettingsFlyout1()
         {
@@ -35,6 +36,7 @@ namespace SettingsFlyout_AnimateOut
 
         void SettingsFlyout1_BackClick(object sender, BackClickEventArgs e)
         {
+            _b.Child = null;
             SettingsPane.Show();
         }
 
@@ -54,24 +56,24 @@ namespace SettingsFlyout_AnimateOut
         public void ShowCustom()
         {
             _p = new Popup();
-            Border b = new Border();
+            _b = new Border();
 
-            b.ChildTransitions = new TransitionCollection();
+            _b.ChildTransitions = new TransitionCollection();
 
             // TODO: if you support right-to-left builds, make sure to test all combinations of RTL operating
             // system build (charms on left) and RTL flow direction for XAML app.  EdgeTransitionLocation.Left
             // may need to be used for RTL (and HorizontalAlignment.Left on the SettingsFlyout below).
-            b.ChildTransitions.Add(new EdgeUIThemeTransition() { Edge = EdgeTransitionLocation.Right });
+            _b.ChildTransitions.Add(new EdgeUIThemeTransition() { Edge = EdgeTransitionLocation.Right });
 
-            b.Background = new SolidColorBrush(Colors.Transparent);
-            b.Width = Window.Current.Bounds.Width;
-            b.Height = Window.Current.Bounds.Height;
-            b.Tapped += b_Tapped;
+            _b.Background = new SolidColorBrush(Colors.Transparent);
+            _b.Width = Window.Current.Bounds.Width;
+            _b.Height = Window.Current.Bounds.Height;
+            _b.Tapped += b_Tapped;
 
             this.HorizontalAlignment = HorizontalAlignment.Right;
-            b.Child = this;
+            _b.Child = this;
 
-            _p.Child = b;
+            _p.Child = _b;
             _p.IsOpen = true;
         }
 
