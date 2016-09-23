@@ -1,0 +1,35 @@
+Handout for CSEP 552 Lecture 4
+Dan Ports
+Based on notes from MIT course 6.824
+
+--- Paxos Proposer ---
+proposer(v):
+    while not decided:
+        choose n, unique and higher than any n seen so far
+        send propose(n) to all servers including self
+        if propose_ok(n, na, va) from majority:
+            v' = va with highest na; choose own v otherwise
+            send accept(n, v') to all
+            if accept_ok(n) from majority:
+                send decided(v') to all
+
+--- Paxos Acceptor ---
+acceptor state on each node (persistent):
+    np     --- highest propose seen
+    na, va --- highest accept seen
+
+acceptor's propose(n) handler:
+    if n > np
+        np = n                              // promise not to accept any lower-numbered proposal
+        reply propose_ok(n, na, va)
+    else
+        reply propose_reject
+
+acceptor's accept(n, v) handler:
+    if n >= np
+        np = n                              // promise not to accept any lower-numbered proposal
+        na = n                              // and make sure that any higher-numbered proposal
+        va = v                              // finds out about the value we accepted
+        reply accept_ok(n)
+    else
+        reply accept_reject
